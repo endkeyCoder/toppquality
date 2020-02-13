@@ -1,8 +1,9 @@
 const nodemailer = require('nodemailer');
+require('dotenv/config');
 
 const user = 'Site Topp Quality <sactoppquality@gmail.com>';
-const address = 'sactoppquality@gmail.com';
-const password = 'Carlos1975';
+const address = process.env.EMAIL_TRANSPORTER;
+const password = process.env.PASS_EMAIL;
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',

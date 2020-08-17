@@ -7,7 +7,7 @@ const ButtonComponent: FunctionComponent<IButton> = props => {
     const { title = "Um botão", fontSize = "standard", backgroundColor = "#f5f5f5", icon = "home" } = props;
     const handleClick = (evt: MouseEvent) => {
         evt.preventDefault();
-        window.open(`https://wa.me/5515998374211?text=Olá, gostaria de saber mais sobre o produto!`.replace(' ', '%20'))
+        window.open(`https://wa.me/5515997692009?text=Olá, gostaria de saber mais sobre o produto!`.replace(' ', '%20'))
     }
     return (
         <div>

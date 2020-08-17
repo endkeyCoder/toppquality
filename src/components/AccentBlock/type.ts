@@ -5,4 +5,5 @@ export interface Props {
     fontSize: FontSize;
     effect?: string;
     effectTimeout?: number;
+    button?: string
 }

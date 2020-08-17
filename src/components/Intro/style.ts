@@ -85,11 +85,13 @@ export const Title = withEffects(styled.h1`
 `);
 
 export const SubTitle = withEffects(styled.div`
-    color: #fff;
+    color: #1da0ec;
     position: relative;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2rem;
+    font-weight: bold;
     max-width: 60%;
+    text-shadow: 2px 2px 3px #000;
     margin: 1rem 0 0 0;
     padding: 0;
     ${media({

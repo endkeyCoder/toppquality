@@ -46,6 +46,7 @@ const StandardBlockComponent: FunctionComponent<Props> = props => {
                 <ImageGallery>
                     <ImageGalleryGrid>
                         {graphics.map((item, key) => {
+                            console.log('print de item => ', item)
                             timeout += 200;
                             return (
                                 <GalleryItem

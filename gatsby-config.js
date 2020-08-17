@@ -23,6 +23,7 @@ module.exports = {
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
         'gatsby-transformer-remark',
+        `gatsby-plugin-fontawesome-css`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {

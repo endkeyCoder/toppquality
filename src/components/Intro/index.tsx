@@ -40,13 +40,13 @@ export const Intro: FunctionComponent<{}> = () => {
                                 effect="fade-slide-left"
                                 effectTimeout={timeoutBase}
                             >
-                                Grayscale promo
+                                Colchão Terapêutico
                             </Title>
                             <SubTitle
                                 effect="fade-slide-bottom"
                                 effectTimeout={timeoutBase + 500}
                             >
-                                GatsbyJS starter
+                                Topp Quality
                             </SubTitle>
                         </Data>
                         <Arrow
@@ -55,9 +55,9 @@ export const Intro: FunctionComponent<{}> = () => {
                         />
                     </Container>
                     <Copyright
-                        author="Caspar Camille Rubin"
-                        source="https://unsplash.com/photos/fPkvU7RDmCo"
-                        sourceText="Unsplash"
+                        author="Woman Photos"
+                        source="https://www.freepik.com/photos/woman"
+                        sourceText="Woman photo created by drobotdean - www.freepik.com"
                     />
                 </>
             )}

@@ -7,7 +7,7 @@ import { Button } from '../Button';
 
 const AccentBlockComponent: FunctionComponent<Props> = props => {
     const { html, fontSize = 'large', button = '' } = props;
-    console.log('print de props em accent => ', props)
+    
     return (
         <AccentBlockContainer fontSize={fontSize} {...props}>
             <Dash />

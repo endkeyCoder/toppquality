@@ -51,7 +51,11 @@ const HomePage: FunctionComponent<Props> = ({ data }) => {
     const { allMarkdownRemark: { nodes = [] } = {} } = data;
     return (
         <Layout>
-            <SEO title="Home" keywords={['']} />
+            <SEO title="Topp Quality" keywords={[
+                'colchao', 'colchao terapeutico', 'colchao da saude', 'terapia', 'sono',
+                'dormir', 'topp', 'top', 'quality', 'colchoes', 'quality colchoes', 'topp quality',
+                'topp quality colchoes'
+            ]} />
             <Intro />
             {nodes.map(node => {
                 const Widget = getWidget(node);

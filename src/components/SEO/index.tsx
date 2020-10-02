@@ -5,7 +5,7 @@ import { Query } from './query';
 
 export const SEO: FunctionComponent<Props> = ({
     description = '',
-    lang = 'en',
+    lang = 'pt-br',
     meta = [],
     keywords = [],
     title,
@@ -14,10 +14,8 @@ export const SEO: FunctionComponent<Props> = ({
         <Query>
             {data => {
                 console.warn('render!');
-
                 const metaDescription =
                     description || data.site.siteMetadata.description;
-
                 return (
                     <Helmet
                         htmlAttributes={{
@@ -46,11 +44,11 @@ export const SEO: FunctionComponent<Props> = ({
                             .concat(
                                 keywords.length > 0
                                     ? [
-                                          {
-                                              name: `keywords`,
-                                              content: keywords.join(`, `),
-                                          },
-                                      ]
+                                        {
+                                            name: `keywords`,
+                                            content: keywords.join(`, `),
+                                        },
+                                    ]
                                     : [],
                             )
                             .concat(meta)}

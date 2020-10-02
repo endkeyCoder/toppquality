@@ -1,10 +1,16 @@
 module.exports = {
     siteMetadata: {
-        title: 'Grayscale promo',
-        description: 'Grayscale promo gatsby starter',
-        author: '@awesome1888',
+        title: 'Colchões Terapeuticos - Topp Quality',
+        description: 'saúde enquanto dorme',
+        author: 'kenedy ribeiro',
     },
     plugins: [
+        {
+            resolve: `gatsby-plugin-typography`,
+            options: {
+                pathToConfigModule: `src/utils/typography`,
+            },
+        },
         {
             resolve: 'gatsby-source-filesystem',
             options: {

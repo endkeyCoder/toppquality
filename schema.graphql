@@ -894,11 +894,11 @@ enum FileFieldsEnum {
   childMarkdownRemark___frontmatter___title
   childMarkdownRemark___frontmatter___id
   childMarkdownRemark___frontmatter___sort
-  childMarkdownRemark___frontmatter___fontSize
   childMarkdownRemark___frontmatter___effect
   childMarkdownRemark___frontmatter___effectTimeout
   childMarkdownRemark___frontmatter___widget
   childMarkdownRemark___frontmatter___button
+  childMarkdownRemark___frontmatter___fontSize
   childMarkdownRemark___frontmatter___graphics
   childMarkdownRemark___frontmatter___graphics___author
   childMarkdownRemark___frontmatter___graphics___sourceText
@@ -1550,11 +1550,11 @@ enum MarkdownRemarkFieldsEnum {
   frontmatter___title
   frontmatter___id
   frontmatter___sort
-  frontmatter___fontSize
   frontmatter___effect
   frontmatter___effectTimeout
   frontmatter___widget
   frontmatter___button
+  frontmatter___fontSize
   frontmatter___graphics
   frontmatter___graphics___author
   frontmatter___graphics___image___birthtime
@@ -1718,11 +1718,11 @@ type MarkdownRemarkFrontmatter {
   title: String
   id: String
   sort: Int
-  fontSize: String
   effect: String
   effectTimeout: Int
   widget: String
   button: String
+  fontSize: String
   graphics: [MarkdownRemarkFrontmatterGraphics]
 }
 
@@ -1730,11 +1730,11 @@ input MarkdownRemarkFrontmatterFilterInput {
   title: StringQueryOperatorInput
   id: StringQueryOperatorInput
   sort: IntQueryOperatorInput
-  fontSize: StringQueryOperatorInput
   effect: StringQueryOperatorInput
   effectTimeout: IntQueryOperatorInput
   widget: StringQueryOperatorInput
   button: StringQueryOperatorInput
+  fontSize: StringQueryOperatorInput
   graphics: MarkdownRemarkFrontmatterGraphicsFilterListInput
 }
 
@@ -1984,6 +1984,7 @@ enum SiteFieldsEnum {
   siteMetadata___title
   siteMetadata___description
   siteMetadata___author
+  siteMetadata___siteUrl
   polyfill
   pathPrefix
   buildTime
@@ -2642,12 +2643,14 @@ type SiteSiteMetadata {
   title: String
   description: String
   author: String
+  siteUrl: String
 }
 
 input SiteSiteMetadataFilterInput {
   title: StringQueryOperatorInput
   description: StringQueryOperatorInput
   author: StringQueryOperatorInput
+  siteUrl: StringQueryOperatorInput
 }
 
 input SiteSortInput {

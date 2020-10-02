@@ -3,6 +3,7 @@ module.exports = {
         title: 'Colchões Terapeuticos - Topp Quality',
         description: 'saúde enquanto dorme',
         author: 'kenedy ribeiro',
+        siteUrl: 'http://www.toppquality.com.br'
     },
     plugins: [
         {
@@ -30,6 +31,8 @@ module.exports = {
         'gatsby-plugin-sharp',
         'gatsby-transformer-remark',
         `gatsby-plugin-fontawesome-css`,
+        `gatsby-plugin-sitemap`,
+        `gatsby-plugin-robots-txt`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {
